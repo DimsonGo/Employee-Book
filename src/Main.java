@@ -19,6 +19,9 @@ public class Main {
         System.out.println("Максимальная сумма " + CalculateMaxSalary());
         System.out.println("Минимальная сумма " + CalculateMinSalary());
         System.out.println("Средняя зарплата " + CalculateSalaryAverage());
+        System.out.println();
+        System.out.println();
+        PrintPeople();
     }
 
     public static void PrintlnEmployee() {
@@ -60,5 +63,12 @@ public class Main {
         int totalSalary = CalculationTotalSalary();
         double averageSalary = (double) totalSalary / employees.length;
         return averageSalary;
+    }
+
+    public static void PrintPeople() {
+        for (int i = 0; i < employees.length; i++) {
+            employees[i].getFullName();
+            System.out.println(employees[i].getFullName());
+        }
     }
 }
